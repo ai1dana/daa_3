@@ -104,7 +104,11 @@ The number of operations grows with the number of edges, but both remain linear 
 
 Execution time increases gradually with input size, showing that both implementations scale predictably.
 
-9. Conclusion
+9.References
+https://algs4.cs.princeton.edu/43mst/KruskalMST.java.html
+https://algs4.cs.princeton.edu/43mst/PrimMST.java.html
+
+10. Conclusion
 
 This project successfully demonstrates the construction of Minimum Spanning Trees using Prim’s and Kruskal’s algorithms.
 Both algorithms are efficient, accurate, and consistent with theoretical analysis.
