@@ -3,6 +3,7 @@ import algorithms.PrimMST;
 import algorithms.KruskalMST;
 import utils.GraphLoader;
 import metrics.Metrics;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.FileWriter;
@@ -12,52 +13,87 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
-        Metrics.startTimer();
-
         String inputFilePath = "src/main/resources/ass_3_input.json";
         String outputFilePath = "src/main/resources/output.json";
+
+        JSONArray resultsArray = new JSONArray();
 
         try {
             List<EdgeWeightedGraph> graphs = GraphLoader.loadGraphFromJson(inputFilePath);
 
-            JSONObject result = new JSONObject();
-
             for (int i = 0; i < graphs.size(); i++) {
                 EdgeWeightedGraph graph = graphs.get(i);
-                System.out.println("Processing graph #" + (i + 1) + ":");
+                int graphId = i + 1;
+
+                System.out.println("Processing graph #" + graphId);
 
                 Metrics.startTimer();
                 PrimMST primMST = new PrimMST(graph);
-                System.out.println("Prim's Algorithm:");
-                System.out.println("Total MST cost: " + primMST.weight());
-                Metrics.printMetrics();
+                Metrics.stopTimer();
+                long primTime = Metrics.getExecutionTime();
+                int primOps = Metrics.getComparisonCount() + Metrics.getInsertCount() + Metrics.getUnionCount();
+
+                JSONArray primEdgesArray = new JSONArray();
+                for (var e : primMST.edges()) {
+                    JSONObject edgeObj = new JSONObject();
+                    edgeObj.put("from", graph.nodeName(e.either()));
+                    edgeObj.put("to", graph.nodeName(e.other(e.either())));
+                    edgeObj.put("weight", e.weight());
+                    primEdgesArray.put(edgeObj);
+                }
+
+                JSONObject primObj = new JSONObject();
+                primObj.put("mst_edges", primEdgesArray);
+                primObj.put("total_cost", primMST.weight());
+                primObj.put("operations_count", primOps);
+                primObj.put("execution_time_ms", primTime / 1_000_000.0);
 
                 Metrics.startTimer();
                 KruskalMST kruskalMST = new KruskalMST(graph);
-                System.out.println("Kruskal's Algorithm:");
-                System.out.println("Total MST cost: " + kruskalMST.weight());
-                Metrics.printMetrics();
+                Metrics.stopTimer();
+                long kruskalTime = Metrics.getExecutionTime();
+                int kruskalOps = Metrics.getComparisonCount() + Metrics.getUnionCount();
 
-                result.put("graph" + (i + 1), new JSONObject()
-                        .put("primMSTCost", primMST.weight())
-                        .put("kruskalMSTCost", kruskalMST.weight())
-                        .put("executionTime", Metrics.getExecutionTime())
-                        .put("primComparisons", Metrics.getComparisonCount())
-                        .put("kruskalComparisons", Metrics.getComparisonCount())
-                        .put("primUnions", Metrics.getUnionCount())
-                        .put("kruskalUnions", Metrics.getUnionCount()));
+                JSONArray kruskalEdgesArray = new JSONArray();
+                for (var e : kruskalMST.edges()) {
+                    JSONObject edgeObj = new JSONObject();
+                    edgeObj.put("from", graph.nodeName(e.either()));
+                    edgeObj.put("to", graph.nodeName(e.other(e.either())));
+                    edgeObj.put("weight", e.weight());
+                    kruskalEdgesArray.put(edgeObj);
+                }
+
+                JSONObject kruskalObj = new JSONObject();
+                kruskalObj.put("mst_edges", kruskalEdgesArray);
+                kruskalObj.put("total_cost", kruskalMST.weight());
+                kruskalObj.put("operations_count", kruskalOps);
+                kruskalObj.put("execution_time_ms", kruskalTime / 1_000_000.0);
+
+                JSONObject graphResult = new JSONObject();
+                graphResult.put("graph_id", graphId);
+
+                JSONObject stats = new JSONObject();
+                stats.put("vertices", graph.V());
+                stats.put("edges", graph.E());
+                graphResult.put("input_stats", stats);
+
+                graphResult.put("prim", primObj);
+                graphResult.put("kruskal", kruskalObj);
+
+                resultsArray.put(graphResult);
             }
 
-            FileWriter writer = new FileWriter(outputFilePath);
-            writer.write(result.toString(4));
-            writer.close();
+            JSONObject finalOutput = new JSONObject();
+            finalOutput.put("results", resultsArray);
 
-            System.out.println("Results have been written to output.json");
+            try (FileWriter writer = new FileWriter(outputFilePath)) {
+                writer.write(finalOutput.toString(4));
+            }
+
+            System.out.println("Results successfully written to " + outputFilePath);
 
         } catch (IOException e) {
-            System.err.println("Error reading input data: " + e.getMessage());
+            System.err.println(" Error reading input: " + e.getMessage());
         }
-
-        Metrics.stopTimer();
     }
 }
