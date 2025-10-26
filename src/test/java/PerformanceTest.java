@@ -1,5 +1,3 @@
-
-
 import algorithms.Edge;
 import algorithms.EdgeWeightedGraph;
 import algorithms.PrimMST;
@@ -27,7 +25,7 @@ public class PerformanceTest {
         System.out.println("Inserts: " + Metrics.getInsertCount());
         System.out.println("Deletes: " + Metrics.getDeleteCount());
 
-        assertTrue(primMST.weight() > 0, "Prim's MST weight must be positive");
+        Assertions.assertTrue(primMST.weight() > 0, "Prim's MST weight must be positive");
     }
 
     @Test
@@ -45,7 +43,7 @@ public class PerformanceTest {
         System.out.println("Inserts: " + Metrics.getInsertCount());
         System.out.println("Deletes: " + Metrics.getDeleteCount());
 
-        assertTrue(kruskalMST.weight() > 0, "Kruskal's MST weight must be positive");
+        Assertions.assertTrue(kruskalMST.weight() > 0, "Kruskal's MST weight must be positive");
     }
 
     private EdgeWeightedGraph createTestGraph() {
