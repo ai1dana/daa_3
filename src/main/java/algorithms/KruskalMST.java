@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
+import metrics.Metrics;
+
 public class KruskalMST {
 
     private static final double FLOATING_POINT_EPSILON = 1.0E-12;
@@ -21,18 +23,23 @@ public class KruskalMST {
 
         UF uf = new UF(G.V());
 
+        Metrics.startTimer();
+
         for (Edge e : edges) {
             int v = e.either();
             int w = e.other(v);
+
+            Metrics.incrementComparisons();
 
             if (uf.find(v) != uf.find(w)) {
                 uf.union(v, w);
                 mst.add(e);
                 weight += e.weight();
+                Metrics.incrementUnions();
             }
         }
 
-        assert check(G);
+        Metrics.stopTimer();
     }
 
     public Iterable<Edge> edges() {
@@ -57,11 +64,14 @@ public class KruskalMST {
         UF uf = new UF(G.V());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
+            Metrics.incrementComparisons();
+
             if (uf.find(v) == uf.find(w)) {
                 System.err.println("Not a forest");
                 return false;
             }
             uf.union(v, w);
+            Metrics.incrementUnions();
         }
 
         for (Edge e : G.edges()) {
@@ -77,6 +87,7 @@ public class KruskalMST {
             for (Edge f : edges()) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) uf.union(x, y);
+                Metrics.incrementUnions();
             }
             for (Edge f : G.edges()) {
                 int x = f.either(), y = f.other(x);

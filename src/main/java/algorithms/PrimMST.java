@@ -2,6 +2,8 @@ package algorithms;
 
 import java.util.*;
 
+import metrics.Metrics;
+
 public class PrimMST {
 
     private static final double FLOATING_POINT_EPSILON = 1.0E-12;
@@ -20,13 +22,18 @@ public class PrimMST {
             distTo[v] = Double.POSITIVE_INFINITY;
         }
 
+        Metrics.startTimer();
+
         visit(G, 0);
 
         while (!pq.isEmpty()) {
             Edge edge = pq.poll();
+            Metrics.incrementComparisons();
             int v = edge.from();
             visit(G, v);
         }
+
+        Metrics.stopTimer();
     }
 
     private void visit(EdgeWeightedGraph G, int v) {
@@ -36,12 +43,18 @@ public class PrimMST {
             int w = e.other(v);
             if (marked[w]) continue;
 
+            Metrics.incrementComparisons();
+
             if (e.weight() < distTo[w]) {
                 distTo[w] = e.weight();
                 edgeTo[w] = e;
 
-                if (pq.contains(e)) pq.remove(e);
+                if (pq.contains(e)) {
+                    pq.remove(e);
+                    Metrics.incrementDeletes();
+                }
                 pq.add(e);
+                Metrics.incrementInserts();
             }
         }
     }
