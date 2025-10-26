@@ -16,14 +16,65 @@
                     "weight": 5,
                     "from": "1",
                     "to": "3"
+                }
+            ],
+            "total_cost": 10,
+            "execution_time_ms": 0,
+            "operations_count": 20
+        },
+        "input_stats": {
+            "vertices": 5,
+            "edges": 5
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
                 },
                 {
-                    "weight": 6,
-                    "from": "3",
+                    "weight": 3,
+                    "from": "0",
+                    "to": "2"
+                },
+                {
+                    "weight": 5,
+                    "from": "1",
+                    "to": "3"
+                }
+            ],
+            "total_cost": 10,
+            "execution_time_ms": 0,
+            "operations_count": 8
+        },
+        "graph_id": 1
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 3,
+                    "from": "0",
+                    "to": "2"
+                },
+                {
+                    "weight": 5,
+                    "from": "1",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "2",
                     "to": "4"
                 }
             ],
-            "total_cost": 16,
+            "total_cost": 18,
             "execution_time_ms": 0,
             "operations_count": 24
         },
@@ -49,85 +100,14 @@
                     "to": "3"
                 },
                 {
-                    "weight": 6,
-                    "from": "3",
+                    "weight": 8,
+                    "from": "2",
                     "to": "4"
                 }
             ],
-            "total_cost": 16,
+            "total_cost": 18,
             "execution_time_ms": 0,
             "operations_count": 10
-        },
-        "graph_id": 1
-    },
-    {
-        "prim": {
-            "mst_edges": [
-                {
-                    "weight": 3,
-                    "from": "0",
-                    "to": "1"
-                },
-                {
-                    "weight": 5,
-                    "from": "2",
-                    "to": "3"
-                },
-                {
-                    "weight": 4,
-                    "from": "1",
-                    "to": "3"
-                },
-                {
-                    "weight": 7,
-                    "from": "2",
-                    "to": "4"
-                },
-                {
-                    "weight": 2,
-                    "from": "4",
-                    "to": "5"
-                }
-            ],
-            "total_cost": 21,
-            "execution_time_ms": 0,
-            "operations_count": 28
-        },
-        "input_stats": {
-            "vertices": 6,
-            "edges": 7
-        },
-        "kruskal": {
-            "mst_edges": [
-                {
-                    "weight": 2,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 3,
-                    "from": "0",
-                    "to": "1"
-                },
-                {
-                    "weight": 4,
-                    "from": "1",
-                    "to": "3"
-                },
-                {
-                    "weight": 5,
-                    "from": "2",
-                    "to": "3"
-                },
-                {
-                    "weight": 7,
-                    "from": "2",
-                    "to": "4"
-                }
-            ],
-            "total_cost": 21,
-            "execution_time_ms": 0,
-            "operations_count": 12
         },
         "graph_id": 2
     },
@@ -135,80 +115,60 @@
         "prim": {
             "mst_edges": [
                 {
-                    "weight": 4,
+                    "weight": 1,
                     "from": "0",
                     "to": "1"
                 },
                 {
-                    "weight": 5,
+                    "weight": 2,
                     "from": "0",
                     "to": "2"
                 },
                 {
-                    "weight": 2,
-                    "from": "1",
+                    "weight": 4,
+                    "from": "2",
                     "to": "3"
                 },
                 {
-                    "weight": 3,
-                    "from": "2",
+                    "weight": 5,
+                    "from": "3",
                     "to": "4"
-                },
-                {
-                    "weight": 7,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 6,
-                    "from": "5",
-                    "to": "6"
                 }
             ],
-            "total_cost": 27,
+            "total_cost": 12,
             "execution_time_ms": 0,
-            "operations_count": 30
+            "operations_count": 18
         },
         "input_stats": {
-            "vertices": 7,
-            "edges": 8
+            "vertices": 5,
+            "edges": 5
         },
         "kruskal": {
             "mst_edges": [
                 {
-                    "weight": 2,
-                    "from": "1",
-                    "to": "3"
-                },
-                {
-                    "weight": 3,
-                    "from": "2",
-                    "to": "4"
-                },
-                {
-                    "weight": 4,
+                    "weight": 1,
                     "from": "0",
                     "to": "1"
                 },
                 {
-                    "weight": 5,
+                    "weight": 2,
                     "from": "0",
                     "to": "2"
                 },
                 {
-                    "weight": 6,
-                    "from": "5",
-                    "to": "6"
+                    "weight": 4,
+                    "from": "2",
+                    "to": "3"
                 },
                 {
-                    "weight": 7,
-                    "from": "4",
-                    "to": "5"
+                    "weight": 5,
+                    "from": "3",
+                    "to": "4"
                 }
             ],
-            "total_cost": 27,
+            "total_cost": 12,
             "execution_time_ms": 0,
-            "operations_count": 14
+            "operations_count": 9
         },
         "graph_id": 3
     },
@@ -221,70 +181,40 @@
                     "to": "1"
                 },
                 {
-                    "weight": 5,
-                    "from": "0",
+                    "weight": 2,
+                    "from": "1",
                     "to": "2"
                 },
                 {
                     "weight": 3,
-                    "from": "1",
+                    "from": "2",
                     "to": "3"
                 },
                 {
                     "weight": 7,
                     "from": "3",
                     "to": "4"
-                },
-                {
-                    "weight": 2,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 4,
-                    "from": "5",
-                    "to": "6"
-                },
-                {
-                    "weight": 5,
-                    "from": "6",
-                    "to": "7"
                 }
             ],
-            "total_cost": 32,
+            "total_cost": 18,
             "execution_time_ms": 0,
-            "operations_count": 36
+            "operations_count": 16
         },
         "input_stats": {
-            "vertices": 8,
-            "edges": 9
+            "vertices": 5,
+            "edges": 4
         },
         "kruskal": {
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 3,
                     "from": "1",
-                    "to": "3"
-                },
-                {
-                    "weight": 4,
-                    "from": "5",
-                    "to": "6"
-                },
-                {
-                    "weight": 5,
-                    "from": "0",
                     "to": "2"
                 },
                 {
-                    "weight": 5,
-                    "from": "6",
-                    "to": "7"
+                    "weight": 3,
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 6,
@@ -297,9 +227,9 @@
                     "to": "4"
                 }
             ],
-            "total_cost": 32,
+            "total_cost": 18,
             "execution_time_ms": 0,
-            "operations_count": 16
+            "operations_count": 8
         },
         "graph_id": 4
     },
@@ -307,100 +237,60 @@
         "prim": {
             "mst_edges": [
                 {
-                    "weight": 3,
-                    "from": "0",
-                    "to": "1"
-                },
-                {
-                    "weight": 4,
+                    "weight": 2,
                     "from": "1",
                     "to": "2"
                 },
                 {
-                    "weight": 5,
-                    "from": "2",
-                    "to": "3"
+                    "weight": 4,
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 6,
-                    "from": "3",
-                    "to": "4"
-                },
-                {
-                    "weight": 7,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 8,
-                    "from": "5",
-                    "to": "6"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 9,
-                    "from": "6",
-                    "to": "7"
-                },
-                {
-                    "weight": 2,
-                    "from": "0",
-                    "to": "8"
+                    "from": "2",
+                    "to": "4"
                 }
             ],
-            "total_cost": 44,
+            "total_cost": 21,
             "execution_time_ms": 0,
-            "operations_count": 36
+            "operations_count": 24
         },
         "input_stats": {
-            "vertices": 9,
-            "edges": 9
+            "vertices": 5,
+            "edges": 6
         },
         "kruskal": {
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "0",
-                    "to": "8"
-                },
-                {
-                    "weight": 3,
-                    "from": "0",
-                    "to": "1"
-                },
-                {
-                    "weight": 4,
                     "from": "1",
                     "to": "2"
                 },
                 {
-                    "weight": 5,
-                    "from": "2",
-                    "to": "3"
+                    "weight": 4,
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 6,
-                    "from": "3",
-                    "to": "4"
-                },
-                {
-                    "weight": 7,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 8,
-                    "from": "5",
-                    "to": "6"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 9,
-                    "from": "6",
-                    "to": "7"
+                    "from": "2",
+                    "to": "4"
                 }
             ],
-            "total_cost": 44,
+            "total_cost": 21,
             "execution_time_ms": 0,
-            "operations_count": 17
+            "operations_count": 10
         },
         "graph_id": 5
     },
@@ -408,110 +298,110 @@
         "prim": {
             "mst_edges": [
                 {
-                    "weight": 4,
+                    "weight": 2,
                     "from": "0",
                     "to": "1"
                 },
                 {
-                    "weight": 8,
-                    "from": "0",
+                    "weight": 3,
+                    "from": "1",
                     "to": "2"
                 },
                 {
-                    "weight": 7,
+                    "weight": 4,
                     "from": "2",
                     "to": "3"
                 },
                 {
-                    "weight": 9,
+                    "weight": 5,
                     "from": "3",
                     "to": "4"
                 },
                 {
-                    "weight": 10,
+                    "weight": 6,
                     "from": "4",
                     "to": "5"
                 },
                 {
-                    "weight": 2,
+                    "weight": 7,
                     "from": "5",
                     "to": "6"
                 },
                 {
-                    "weight": 1,
+                    "weight": 8,
                     "from": "6",
                     "to": "7"
                 },
                 {
-                    "weight": 7,
+                    "weight": 9,
                     "from": "7",
                     "to": "8"
                 },
                 {
-                    "weight": 6,
+                    "weight": 10,
                     "from": "8",
                     "to": "9"
                 }
             ],
             "total_cost": 54,
             "execution_time_ms": 0,
-            "operations_count": 38
+            "operations_count": 36
         },
         "input_stats": {
             "vertices": 10,
-            "edges": 10
+            "edges": 9
         },
         "kruskal": {
             "mst_edges": [
                 {
-                    "weight": 1,
-                    "from": "6",
-                    "to": "7"
-                },
-                {
                     "weight": 2,
-                    "from": "5",
-                    "to": "6"
-                },
-                {
-                    "weight": 4,
                     "from": "0",
                     "to": "1"
                 },
                 {
-                    "weight": 6,
-                    "from": "8",
-                    "to": "9"
+                    "weight": 3,
+                    "from": "1",
+                    "to": "2"
                 },
                 {
-                    "weight": 7,
+                    "weight": 4,
                     "from": "2",
                     "to": "3"
                 },
                 {
-                    "weight": 7,
-                    "from": "7",
-                    "to": "8"
-                },
-                {
-                    "weight": 8,
-                    "from": "0",
-                    "to": "2"
-                },
-                {
-                    "weight": 9,
+                    "weight": 5,
                     "from": "3",
                     "to": "4"
                 },
                 {
-                    "weight": 10,
+                    "weight": 6,
                     "from": "4",
                     "to": "5"
+                },
+                {
+                    "weight": 7,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 8,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 9,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 10,
+                    "from": "8",
+                    "to": "9"
                 }
             ],
             "total_cost": 54,
             "execution_time_ms": 0,
-            "operations_count": 19
+            "operations_count": 18
         },
         "graph_id": 6
     },
@@ -519,195 +409,513 @@
         "prim": {
             "mst_edges": [
                 {
+                    "weight": 1,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 3,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 4,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 5,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 6,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 7,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 8,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 9,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 45,
+            "execution_time_ms": 0,
+            "operations_count": 36
+        },
+        "input_stats": {
+            "vertices": 10,
+            "edges": 9
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 1,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 3,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 4,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 5,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 6,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 7,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 8,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 9,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 45,
+            "execution_time_ms": 0,
+            "operations_count": 18
+        },
+        "graph_id": 7
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
                     "weight": 5,
                     "from": "0",
                     "to": "1"
                 },
                 {
-                    "weight": 8,
+                    "weight": 6,
                     "from": "1",
                     "to": "2"
                 },
                 {
-                    "weight": 10,
+                    "weight": 7,
                     "from": "2",
                     "to": "3"
                 },
                 {
-                    "weight": 12,
+                    "weight": 8,
                     "from": "3",
                     "to": "4"
                 },
                 {
-                    "weight": 7,
+                    "weight": 9,
                     "from": "4",
                     "to": "5"
                 },
                 {
-                    "weight": 3,
+                    "weight": 10,
                     "from": "5",
                     "to": "6"
                 },
                 {
-                    "weight": 2,
+                    "weight": 11,
                     "from": "6",
                     "to": "7"
                 },
                 {
-                    "weight": 4,
+                    "weight": 12,
                     "from": "7",
                     "to": "8"
                 },
                 {
-                    "weight": 11,
+                    "weight": 13,
                     "from": "8",
                     "to": "9"
+                }
+            ],
+            "total_cost": 81,
+            "execution_time_ms": 0,
+            "operations_count": 36
+        },
+        "input_stats": {
+            "vertices": 10,
+            "edges": 9
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 6,
-                    "from": "9",
-                    "to": "10"
-                },
-                {
-                    "weight": 13,
-                    "from": "10",
-                    "to": "11"
-                },
-                {
-                    "weight": 9,
-                    "from": "11",
-                    "to": "12"
-                },
-                {
-                    "weight": 15,
-                    "from": "12",
-                    "to": "13"
-                },
-                {
-                    "weight": 14,
-                    "from": "13",
-                    "to": "14"
-                },
-                {
-                    "weight": 8,
-                    "from": "14",
-                    "to": "15"
-                },
-                {
-                    "weight": 5,
-                    "from": "15",
-                    "to": "16"
-                },
-                {
-                    "weight": 9,
-                    "from": "16",
-                    "to": "17"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 7,
-                    "from": "17",
-                    "to": "18"
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 9,
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 10,
-                    "from": "18",
-                    "to": "19"
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 11,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 12,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 13,
+                    "from": "8",
+                    "to": "9"
                 }
             ],
-            "total_cost": 158,
+            "total_cost": 81,
             "execution_time_ms": 0,
-            "operations_count": 76
+            "operations_count": 18
+        },
+        "graph_id": 8
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 4,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 3,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 2,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 5,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 6,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 7,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 8,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 9,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 10,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 54,
+            "execution_time_ms": 0,
+            "operations_count": 36
         },
         "input_stats": {
-            "vertices": 20,
-            "edges": 19
+            "vertices": 10,
+            "edges": 9
         },
         "kruskal": {
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "6",
-                    "to": "7"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 3,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 4,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 5,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 6,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 7,
                     "from": "5",
                     "to": "6"
                 },
                 {
-                    "weight": 4,
+                    "weight": 8,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 9,
                     "from": "7",
                     "to": "8"
                 },
+                {
+                    "weight": 10,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 54,
+            "execution_time_ms": 0,
+            "operations_count": 18
+        },
+        "graph_id": 9
+    },
+    {
+        "prim": {
+            "mst_edges": [
                 {
                     "weight": 5,
                     "from": "0",
                     "to": "1"
                 },
                 {
-                    "weight": 5,
-                    "from": "15",
-                    "to": "16"
-                },
-                {
-                    "weight": 6,
-                    "from": "9",
-                    "to": "10"
-                },
-                {
                     "weight": 7,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 7,
-                    "from": "17",
-                    "to": "18"
-                },
-                {
-                    "weight": 8,
                     "from": "1",
                     "to": "2"
                 },
                 {
                     "weight": 8,
-                    "from": "14",
-                    "to": "15"
-                },
-                {
-                    "weight": 9,
-                    "from": "11",
-                    "to": "12"
-                },
-                {
-                    "weight": 9,
-                    "from": "16",
-                    "to": "17"
-                },
-                {
-                    "weight": 10,
                     "from": "2",
                     "to": "3"
                 },
                 {
-                    "weight": 10,
-                    "from": "18",
-                    "to": "19"
-                },
-                {
-                    "weight": 11,
-                    "from": "8",
-                    "to": "9"
-                },
-                {
-                    "weight": 12,
+                    "weight": 9,
                     "from": "3",
                     "to": "4"
                 },
                 {
+                    "weight": 10,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 11,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 12,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
                     "weight": 13,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 14,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 89,
+            "execution_time_ms": 0,
+            "operations_count": 36
+        },
+        "input_stats": {
+            "vertices": 10,
+            "edges": 9
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 7,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 8,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 9,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 10,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 11,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 12,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 13,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 14,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 89,
+            "execution_time_ms": 0,
+            "operations_count": 18
+        },
+        "graph_id": 10
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 1,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 3,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 4,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 5,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 6,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 7,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 8,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 9,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 10,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 11,
                     "from": "10",
                     "to": "11"
+                },
+                {
+                    "weight": 12,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 13,
+                    "from": "12",
+                    "to": "13"
                 },
                 {
                     "weight": 14,
@@ -716,15 +924,2435 @@
                 },
                 {
                     "weight": 15,
-                    "from": "12",
-                    "to": "13"
+                    "from": "14",
+                    "to": "15"
                 }
             ],
-            "total_cost": 158,
+            "total_cost": 120,
             "execution_time_ms": 0,
-            "operations_count": 38
+            "operations_count": 60
         },
-        "graph_id": 7
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 1,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 3,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 4,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 5,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 6,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 7,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 8,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 9,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 10,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 11,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 12,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 13,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 14,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 15,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 120,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 11
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 2,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 3,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 4,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 5,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 6,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 7,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 8,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 9,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 10,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 11,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 12,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 13,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 14,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 15,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 16,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 135,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 2,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 3,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 4,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 5,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 6,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 7,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 8,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 9,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 10,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 11,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 12,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 13,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 14,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 15,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 16,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 135,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 12
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 3,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 4,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 5,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 6,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 7,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 8,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 9,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 10,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 11,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 12,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 13,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 14,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 15,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 16,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 17,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 150,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 3,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 4,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 5,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 6,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 7,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 8,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 9,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 10,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 11,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 12,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 13,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 14,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 15,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 16,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 17,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 150,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 13
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 4,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 5,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 6,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 7,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 8,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 9,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 10,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 11,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 12,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 13,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 14,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 15,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 16,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 17,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 18,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 165,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 4,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 5,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 6,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 7,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 8,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 9,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 10,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 11,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 12,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 13,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 14,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 15,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 16,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 17,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 18,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 165,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 14
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 6,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 7,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 9,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 10,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 11,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 12,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 13,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 14,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 15,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 16,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 17,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 18,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 19,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 180,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 6,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 7,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 9,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 10,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 11,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 12,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 13,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 14,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 15,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 16,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 17,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 18,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 19,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 180,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 15
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 6,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 7,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 9,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 10,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 11,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 12,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 13,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 81,
+            "execution_time_ms": 0,
+            "operations_count": 36
+        },
+        "input_stats": {
+            "vertices": 10,
+            "edges": 9
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 6,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 7,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 9,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 10,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 11,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 12,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 13,
+                    "from": "8",
+                    "to": "9"
+                }
+            ],
+            "total_cost": 81,
+            "execution_time_ms": 0,
+            "operations_count": 18
+        },
+        "graph_id": 16
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 1,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 3,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 4,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 5,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 6,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 7,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 8,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 9,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 10,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 11,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 12,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 13,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 14,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 15,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 120,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 1,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 2,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 3,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 4,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 5,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 6,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 7,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 8,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 9,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 10,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 11,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 12,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 13,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 14,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 15,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 120,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 17
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 2,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 3,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 4,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 5,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 6,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 7,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 8,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 9,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 10,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 11,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 12,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 13,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 14,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 15,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 16,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 135,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 2,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 3,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 4,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 5,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 6,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 7,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 8,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 9,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 10,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 11,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 12,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 13,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 14,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 15,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 16,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 135,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 18
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 3,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 4,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 5,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 6,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 7,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 8,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 9,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 10,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 11,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 12,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 13,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 14,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 15,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 16,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 17,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 150,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 3,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 4,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 5,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 6,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 7,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 8,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 9,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 10,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 11,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 12,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 13,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 14,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 15,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 16,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 17,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 150,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 19
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 4,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 5,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 6,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 7,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 8,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 9,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 10,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 11,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 12,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 13,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 14,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 15,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 16,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 17,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 18,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 165,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 4,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 5,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 6,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 7,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 8,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 9,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 10,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 11,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 12,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 13,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 14,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 15,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 16,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 17,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 18,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 165,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 20
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 6,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 7,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 9,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 10,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 11,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 12,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 13,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 14,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 15,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 16,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 17,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 18,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 19,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 180,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 5,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 6,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 7,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 8,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 9,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 10,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 11,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 12,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 13,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 14,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 15,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 16,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 17,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 18,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 19,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 180,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 21
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 6,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 7,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 8,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 9,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 10,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 11,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 12,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 13,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 14,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 15,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 16,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 17,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 18,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 19,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 20,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 195,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 6,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 7,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 8,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 9,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 10,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 11,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 12,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 13,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 14,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 15,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 16,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 17,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 18,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 19,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 20,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 195,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 22
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 7,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 8,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 9,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 10,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 11,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 12,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 13,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 14,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 15,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 16,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 17,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 18,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 19,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 20,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 21,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 210,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 7,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 8,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 9,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 10,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 11,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 12,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 13,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 14,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 15,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 16,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 17,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 18,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 19,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 20,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 21,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 210,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 23
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 8,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 9,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 10,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 11,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 12,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 13,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 14,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 15,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 16,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 17,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 18,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 19,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 20,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 21,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 22,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 225,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 8,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 9,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 10,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 11,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 12,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 13,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 14,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 15,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 16,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 17,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 18,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 19,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 20,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 21,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 22,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 225,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 24
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 9,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 10,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 11,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 12,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 13,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 14,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 15,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 16,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 17,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 18,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 19,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 20,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 21,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 22,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 23,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 240,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 9,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 10,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 11,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 12,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 13,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 14,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 15,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 16,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 17,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 18,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 19,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 20,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 21,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 22,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 23,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 240,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 25
     },
     {
         "prim": {
@@ -735,306 +3363,508 @@
                     "to": "1"
                 },
                 {
-                    "weight": 9,
+                    "weight": 11,
                     "from": "1",
                     "to": "2"
                 },
                 {
-                    "weight": 8,
+                    "weight": 12,
                     "from": "2",
                     "to": "3"
                 },
                 {
-                    "weight": 7,
+                    "weight": 13,
                     "from": "3",
                     "to": "4"
                 },
                 {
-                    "weight": 6,
+                    "weight": 14,
                     "from": "4",
                     "to": "5"
                 },
                 {
-                    "weight": 5,
+                    "weight": 15,
                     "from": "5",
                     "to": "6"
                 },
                 {
-                    "weight": 4,
+                    "weight": 16,
                     "from": "6",
                     "to": "7"
                 },
                 {
-                    "weight": 3,
+                    "weight": 17,
                     "from": "7",
                     "to": "8"
                 },
                 {
-                    "weight": 2,
+                    "weight": 18,
                     "from": "8",
                     "to": "9"
                 },
                 {
-                    "weight": 1,
+                    "weight": 19,
                     "from": "9",
                     "to": "10"
                 },
                 {
-                    "weight": 11,
+                    "weight": 20,
                     "from": "10",
                     "to": "11"
                 },
                 {
-                    "weight": 12,
+                    "weight": 21,
                     "from": "11",
                     "to": "12"
                 },
                 {
-                    "weight": 13,
+                    "weight": 22,
                     "from": "12",
                     "to": "13"
                 },
                 {
-                    "weight": 14,
+                    "weight": 23,
                     "from": "13",
                     "to": "14"
                 },
                 {
-                    "weight": 15,
+                    "weight": 24,
                     "from": "14",
                     "to": "15"
-                },
-                {
-                    "weight": 16,
-                    "from": "15",
-                    "to": "16"
-                },
-                {
-                    "weight": 17,
-                    "from": "16",
-                    "to": "17"
-                },
-                {
-                    "weight": 18,
-                    "from": "17",
-                    "to": "18"
-                },
-                {
-                    "weight": 19,
-                    "from": "18",
-                    "to": "19"
-                },
-                {
-                    "weight": 20,
-                    "from": "19",
-                    "to": "20"
-                },
-                {
-                    "weight": 9,
-                    "from": "20",
-                    "to": "21"
-                },
-                {
-                    "weight": 10,
-                    "from": "21",
-                    "to": "22"
-                },
-                {
-                    "weight": 11,
-                    "from": "22",
-                    "to": "23"
-                },
-                {
-                    "weight": 12,
-                    "from": "23",
-                    "to": "24"
-                },
-                {
-                    "weight": 13,
-                    "from": "24",
-                    "to": "25"
-                },
-                {
-                    "weight": 14,
-                    "from": "25",
-                    "to": "26"
-                },
-                {
-                    "weight": 15,
-                    "from": "26",
-                    "to": "27"
-                },
-                {
-                    "weight": 16,
-                    "from": "27",
-                    "to": "28"
-                },
-                {
-                    "weight": 17,
-                    "from": "28",
-                    "to": "29"
                 }
             ],
-            "total_cost": 327,
+            "total_cost": 255,
             "execution_time_ms": 0,
-            "operations_count": 116
+            "operations_count": 60
         },
         "input_stats": {
-            "vertices": 30,
-            "edges": 29
+            "vertices": 16,
+            "edges": 15
         },
         "kruskal": {
             "mst_edges": [
-                {
-                    "weight": 1,
-                    "from": "9",
-                    "to": "10"
-                },
-                {
-                    "weight": 2,
-                    "from": "8",
-                    "to": "9"
-                },
-                {
-                    "weight": 3,
-                    "from": "7",
-                    "to": "8"
-                },
-                {
-                    "weight": 4,
-                    "from": "6",
-                    "to": "7"
-                },
-                {
-                    "weight": 5,
-                    "from": "5",
-                    "to": "6"
-                },
-                {
-                    "weight": 6,
-                    "from": "4",
-                    "to": "5"
-                },
-                {
-                    "weight": 7,
-                    "from": "3",
-                    "to": "4"
-                },
-                {
-                    "weight": 8,
-                    "from": "2",
-                    "to": "3"
-                },
-                {
-                    "weight": 9,
-                    "from": "1",
-                    "to": "2"
-                },
-                {
-                    "weight": 9,
-                    "from": "20",
-                    "to": "21"
-                },
                 {
                     "weight": 10,
                     "from": "0",
                     "to": "1"
                 },
                 {
-                    "weight": 10,
-                    "from": "21",
-                    "to": "22"
+                    "weight": 11,
+                    "from": "1",
+                    "to": "2"
                 },
                 {
-                    "weight": 11,
+                    "weight": 12,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 13,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 14,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 15,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 16,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 17,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 18,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 19,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 20,
                     "from": "10",
                     "to": "11"
                 },
                 {
-                    "weight": 11,
-                    "from": "22",
-                    "to": "23"
-                },
-                {
-                    "weight": 12,
+                    "weight": 21,
                     "from": "11",
                     "to": "12"
                 },
                 {
-                    "weight": 12,
-                    "from": "23",
-                    "to": "24"
-                },
-                {
-                    "weight": 13,
+                    "weight": 22,
                     "from": "12",
                     "to": "13"
                 },
                 {
-                    "weight": 13,
-                    "from": "24",
-                    "to": "25"
-                },
-                {
-                    "weight": 14,
+                    "weight": 23,
                     "from": "13",
                     "to": "14"
                 },
                 {
-                    "weight": 14,
-                    "from": "25",
-                    "to": "26"
-                },
-                {
-                    "weight": 15,
+                    "weight": 24,
                     "from": "14",
                     "to": "15"
+                }
+            ],
+            "total_cost": 255,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 26
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 11,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 12,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 13,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 14,
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 15,
-                    "from": "26",
-                    "to": "27"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 16,
-                    "from": "15",
-                    "to": "16"
-                },
-                {
-                    "weight": 16,
-                    "from": "27",
-                    "to": "28"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 17,
-                    "from": "16",
-                    "to": "17"
-                },
-                {
-                    "weight": 17,
-                    "from": "28",
-                    "to": "29"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 18,
-                    "from": "17",
-                    "to": "18"
+                    "from": "7",
+                    "to": "8"
                 },
                 {
                     "weight": 19,
-                    "from": "18",
-                    "to": "19"
+                    "from": "8",
+                    "to": "9"
                 },
                 {
                     "weight": 20,
-                    "from": "19",
-                    "to": "20"
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 21,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 22,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 23,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 24,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 25,
+                    "from": "14",
+                    "to": "15"
                 }
             ],
-            "total_cost": 327,
+            "total_cost": 270,
             "execution_time_ms": 0,
-            "operations_count": 58
+            "operations_count": 60
         },
-        "graph_id": 8
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 11,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 12,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 13,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 14,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 15,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 16,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 17,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 18,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 19,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 20,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 21,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 22,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 23,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 24,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 25,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 270,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 27
+    },
+    {
+        "prim": {
+            "mst_edges": [
+                {
+                    "weight": 12,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 13,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 14,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 15,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 16,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 17,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 18,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 19,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 20,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 21,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 22,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 23,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 24,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 25,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 26,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 285,
+            "execution_time_ms": 0,
+            "operations_count": 60
+        },
+        "input_stats": {
+            "vertices": 16,
+            "edges": 15
+        },
+        "kruskal": {
+            "mst_edges": [
+                {
+                    "weight": 12,
+                    "from": "0",
+                    "to": "1"
+                },
+                {
+                    "weight": 13,
+                    "from": "1",
+                    "to": "2"
+                },
+                {
+                    "weight": 14,
+                    "from": "2",
+                    "to": "3"
+                },
+                {
+                    "weight": 15,
+                    "from": "3",
+                    "to": "4"
+                },
+                {
+                    "weight": 16,
+                    "from": "4",
+                    "to": "5"
+                },
+                {
+                    "weight": 17,
+                    "from": "5",
+                    "to": "6"
+                },
+                {
+                    "weight": 18,
+                    "from": "6",
+                    "to": "7"
+                },
+                {
+                    "weight": 19,
+                    "from": "7",
+                    "to": "8"
+                },
+                {
+                    "weight": 20,
+                    "from": "8",
+                    "to": "9"
+                },
+                {
+                    "weight": 21,
+                    "from": "9",
+                    "to": "10"
+                },
+                {
+                    "weight": 22,
+                    "from": "10",
+                    "to": "11"
+                },
+                {
+                    "weight": 23,
+                    "from": "11",
+                    "to": "12"
+                },
+                {
+                    "weight": 24,
+                    "from": "12",
+                    "to": "13"
+                },
+                {
+                    "weight": 25,
+                    "from": "13",
+                    "to": "14"
+                },
+                {
+                    "weight": 26,
+                    "from": "14",
+                    "to": "15"
+                }
+            ],
+            "total_cost": 285,
+            "execution_time_ms": 0,
+            "operations_count": 30
+        },
+        "graph_id": 28
     }
 ]}

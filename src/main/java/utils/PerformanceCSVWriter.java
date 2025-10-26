@@ -1,129 +1,175 @@
 package utils;
 
-import algorithms.Edge;
-import algorithms.EdgeWeightedGraph;
-import algorithms.PrimMST;
-import algorithms.KruskalMST;
-import metrics.Metrics;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.annotations.SerializedName;
 
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
+import java.util.Locale;
+import java.util.Objects;
+import java.util.stream.Collectors;
 
 public class PerformanceCSVWriter {
 
+
+    static class EdgeOut {
+        String from;
+        String to;
+        double weight;
+    }
+
+    static class AlgoOut {
+        @SerializedName("mst_edges")
+        List<EdgeOut> mstEdges = new ArrayList<>();
+
+        @SerializedName("total_cost")
+        double totalCost;
+
+        @SerializedName("operations_count")
+        long operationsCount;
+
+        @SerializedName("execution_time_ms")
+        double executionTimeMs;
+    }
+
+    static class InputStats {
+        int vertices;
+        int edges;
+    }
+
+    static class GraphResult {
+        @SerializedName("graph_id")
+        int graphId;
+
+        @SerializedName("input_stats")
+        InputStats inputStats;
+
+        AlgoOut prim;
+        AlgoOut kruskal;
+    }
+
+    static class OutputRoot {
+        List<GraphResult> results = new ArrayList<>();
+    }
+
     public static void main(String[] args) {
-        String csvFile = "src/main/resources/performance_results.csv";
+        Locale.setDefault(Locale.US);
 
-        try (FileWriter writer = new FileWriter(csvFile)) {
-            writer.append("Algorithm,Vertices,Edges,Comparisons,Unions,Inserts,Deletes,OperationsCount,ExecutionTime(ms)\n");
+        String inputPath  = args.length > 0 ? args[0] : "src/main/resources/output.json";
+        String outputPath = args.length > 1 ? args[1] : "src/main/resources/output.csv";
 
-            int[] graphSizes = {10, 50, 100, 200, 500};
-            double totalPrimOps = 0;
-            double totalKruskalOps = 0;
-            double totalPrimTime = 0;
-            double totalKruskalTime = 0;
+        try (Reader reader = new BufferedReader(new InputStreamReader(new FileInputStream(inputPath), StandardCharsets.UTF_8))) {
 
-            for (int n : graphSizes) {
-                EdgeWeightedGraph graph = createRandomGraph(n);
+            Gson gson = new GsonBuilder()
+                    .serializeNulls()
+                    .setLenient()
+                    .create();
 
-                // ==== PRIM ====
-                Metrics.startTimer();
-                long startPrim = System.nanoTime();
-                PrimMST primMST = new PrimMST(graph);
-                long endPrim = System.nanoTime();
-                Metrics.stopTimer();
-
-                double primTime = (endPrim - startPrim) / 1_000_000.0;
-
-                int primOps = Metrics.getComparisonCount()
-                        + Metrics.getUnionCount()
-                        + Metrics.getInsertCount()
-                        + Metrics.getDeleteCount();
-
-                totalPrimOps += primOps;
-                totalPrimTime += primTime;
-
-                writer.append(String.format(
-                        "Prim,%d,%d,%d,%d,%d,%d,%d,%.4f\n",
-                        graph.V(),
-                        graph.E(),
-                        Metrics.getComparisonCount(),
-                        Metrics.getUnionCount(),
-                        Metrics.getInsertCount(),
-                        Metrics.getDeleteCount(),
-                        primOps,
-                        primTime
-                ));
-
-                Metrics.startTimer();
-                long startKruskal = System.nanoTime();
-                KruskalMST kruskalMST = new KruskalMST(graph);
-                long endKruskal = System.nanoTime();
-                Metrics.stopTimer();
-
-                double kruskalTime = (endKruskal - startKruskal) / 1_000_000.0;
-
-                int kruskalOps = Metrics.getComparisonCount()
-                        + Metrics.getUnionCount()
-                        + Metrics.getInsertCount()
-                        + Metrics.getDeleteCount();
-
-                totalKruskalOps += kruskalOps;
-                totalKruskalTime += kruskalTime;
-
-                writer.append(String.format(
-                        "Kruskal,%d,%d,%d,%d,%d,%d,%d,%.4f\n",
-                        graph.V(),
-                        graph.E(),
-                        Metrics.getComparisonCount(),
-                        Metrics.getUnionCount(),
-                        Metrics.getInsertCount(),
-                        Metrics.getDeleteCount(),
-                        kruskalOps,
-                        kruskalTime
-                ));
-
-                System.out.printf(" Graph(%d): Prim = %.4f ms, Kruskal = %.4f ms%n", n, primTime, kruskalTime);
+            OutputRoot root = gson.fromJson(reader, OutputRoot.class);
+            if (root == null || root.results == null || root.results.isEmpty()) {
+                System.err.println("ERROR " + inputPath);
+                return;
             }
 
-            writer.append("\n");
-            writer.append(String.format("Prim Total,,,,,,,,%.4f\n", totalPrimTime));
-            writer.append(String.format("Kruskal Total,,,,,,,,%.4f\n", totalKruskalTime));
-            writer.append(String.format("Prim Total Ops,,,,,,,%d,\n", (int) totalPrimOps));
-            writer.append(String.format("Kruskal Total Ops,,,,,,,%d,\n", (int) totalKruskalOps));
+            try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(outputPath), StandardCharsets.UTF_8))) {
 
-            System.out.println("\n Performance results written to: " + csvFile);
-            System.out.printf("Prim Total Time: %.3f ms, Total Ops: %.0f%n", totalPrimTime, totalPrimOps);
-            System.out.printf("Kruskal Total Time: %.3f ms, Total Ops: %.0f%n", totalKruskalTime, totalKruskalOps);
+                writer.write(String.join(",",
+                        "graph_id",
+                        "algorithm",
+                        "vertices",
+                        "edges",
+                        "total_cost",
+                        "operations_count",
+                        "execution_time_ms",
+                        "mst_edge_count",
+                        "mst_edges"
+                ));
+                writer.newLine();
 
+                for (GraphResult graph : root.results) {
+                    int gid = graph != null ? graph.graphId : -1;
+                    int V = (graph != null && graph.inputStats != null) ? graph.inputStats.vertices : 0;
+                    int E = (graph != null && graph.inputStats != null) ? graph.inputStats.edges : 0;
+
+                    writeAlgoRow(writer, gid, "Prim", V, E, graph != null ? graph.prim : null);
+                    
+                    writeAlgoRow(writer, gid, "Kruskal", V, E, graph != null ? graph.kruskal : null);
+                }
+
+                writer.flush();
+                System.out.println("CSV file created successfully: " + outputPath);
+            }
+
+        } catch (FileNotFoundException e) {
+            System.err.println("ERROR: " + e.getMessage());
         } catch (IOException e) {
+            System.err.println("ERROR: " + e.getMessage());
+        } catch (Exception e) {
+            System.err.println("ERROR: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
-    private static EdgeWeightedGraph createRandomGraph(int n) {
-        List<String> names = java.util.stream.IntStream.range(0, n)
-                .mapToObj(i -> "V" + i)
-                .toList();
+    private static void writeAlgoRow(BufferedWriter writer,
+                                     int graphId,
+                                     String algorithm,
+                                     int vertices,
+                                     int edges,
+                                     AlgoOut algo) throws IOException {
 
-        EdgeWeightedGraph graph = new EdgeWeightedGraph(n, names);
-        Random random = new Random(42);
+        double totalCost = safeDouble(algo == null ? null : algo.totalCost);
+        long ops = safeLong(algo == null ? null : algo.operationsCount);
+        double timeMs = safeDouble(algo == null ? null : algo.executionTimeMs);
 
-        for (int i = 0; i < n - 1; i++) {
-            graph.addEdge(new Edge(i, i + 1, random.nextInt(1, 50)));
+        List<EdgeOut> mst = (algo != null && algo.mstEdges != null) ? algo.mstEdges : List.of();
+        int mstCount = mst.size();
+        String mstStr = formatMstEdges(mst);
+
+        writer.write(csv(graphId) + ","
+                + csv(algorithm) + ","
+                + csv(vertices) + ","
+                + csv(edges) + ","
+                + csv(totalCost) + ","
+                + csv(ops) + ","
+                + csv(timeMs) + ","
+                + csv(mstCount) + ","
+                + csv(mstStr));
+        writer.newLine();
+    }
+
+
+    private static String formatMstEdges(List<EdgeOut> edges) {
+        if (edges == null || edges.isEmpty()) return "";
+        return edges.stream()
+                .filter(Objects::nonNull)
+                .map(e -> {
+                    String f = e.from == null ? "" : e.from;
+                    String t = e.to == null ? "" : e.to;
+                    double w = e.weight;
+                    String wStr = (Math.rint(w) == w) ? String.format(Locale.US, "%.0f", w) : String.format(Locale.US, "%.4f", w);
+                    return f + "-" + t + "(" + wStr + ")";
+                })
+                .collect(Collectors.joining("; "));
+    }
+
+    private static String csv(Object value) {
+        String s = (value == null) ? "" : String.valueOf(value);
+        boolean needQuotes = s.contains(",") || s.contains("\"") || s.contains("\n") || s.contains("\r");
+        if (needQuotes) {
+            s = s.replace("\"", "\"\"");
+            return "\"" + s + "\"";
         }
+        return s;
+    }
 
-        int extraEdges = n * 2;
-        for (int i = 0; i < extraEdges; i++) {
-            int u = random.nextInt(n);
-            int v = random.nextInt(n);
-            if (u != v) {
-                graph.addEdge(new Edge(u, v, random.nextInt(1, 100)));
-            }
-        }
+    private static double safeDouble(Double d) {
+        return d == null ? 0.0 : d;
+    }
 
-        return graph;
+    private static long safeLong(Long l) {
+        return l == null ? 0L : l;
     }
 }
