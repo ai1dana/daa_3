@@ -3,9 +3,6 @@ package algorithms;
 import metrics.Metrics;
 import java.util.*;
 
-/**
- * Реализация алгоритма Прима (MST) с поддержкой метрик
- */
 public class PrimMST {
 
     private static final double FLOATING_POINT_EPSILON = 1.0E-12;

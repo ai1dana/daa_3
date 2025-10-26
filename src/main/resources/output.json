@@ -4,23 +4,23 @@
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "B",
-                    "to": "C"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 3,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 5,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 6,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 }
             ],
             "total_cost": 16,
@@ -35,23 +35,23 @@
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "B",
-                    "to": "C"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 3,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 5,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 6,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 }
             ],
             "total_cost": 16,
@@ -65,28 +65,28 @@
             "mst_edges": [
                 {
                     "weight": 3,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 5,
-                    "from": "C",
-                    "to": "D"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 4,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 7,
-                    "from": "C",
-                    "to": "E"
+                    "from": "2",
+                    "to": "4"
                 },
                 {
                     "weight": 2,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 }
             ],
             "total_cost": 21,
@@ -101,28 +101,28 @@
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 3,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 4,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 5,
-                    "from": "C",
-                    "to": "D"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 7,
-                    "from": "C",
-                    "to": "E"
+                    "from": "2",
+                    "to": "4"
                 }
             ],
             "total_cost": 21,
@@ -136,33 +136,33 @@
             "mst_edges": [
                 {
                     "weight": 4,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 5,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 2,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 3,
-                    "from": "C",
-                    "to": "E"
+                    "from": "2",
+                    "to": "4"
                 },
                 {
                     "weight": 7,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 6,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 }
             ],
             "total_cost": 27,
@@ -177,33 +177,33 @@
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 3,
-                    "from": "C",
-                    "to": "E"
+                    "from": "2",
+                    "to": "4"
                 },
                 {
                     "weight": 4,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 5,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 6,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 7,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 }
             ],
             "total_cost": 27,
@@ -217,38 +217,38 @@
             "mst_edges": [
                 {
                     "weight": 6,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 5,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 3,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 7,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 2,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 4,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 5,
-                    "from": "G",
-                    "to": "H"
+                    "from": "6",
+                    "to": "7"
                 }
             ],
             "total_cost": 32,
@@ -263,38 +263,38 @@
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 3,
-                    "from": "B",
-                    "to": "D"
+                    "from": "1",
+                    "to": "3"
                 },
                 {
                     "weight": 4,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 5,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 5,
-                    "from": "G",
-                    "to": "H"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 6,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 7,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 }
             ],
             "total_cost": 32,
@@ -308,43 +308,43 @@
             "mst_edges": [
                 {
                     "weight": 3,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 4,
-                    "from": "B",
-                    "to": "C"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 5,
-                    "from": "C",
-                    "to": "D"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 6,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 7,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 8,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 9,
-                    "from": "G",
-                    "to": "H"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 2,
-                    "from": "A",
-                    "to": "I"
+                    "from": "0",
+                    "to": "8"
                 }
             ],
             "total_cost": 44,
@@ -359,43 +359,43 @@
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "A",
-                    "to": "I"
+                    "from": "0",
+                    "to": "8"
                 },
                 {
                     "weight": 3,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 4,
-                    "from": "B",
-                    "to": "C"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 5,
-                    "from": "C",
-                    "to": "D"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 6,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 7,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 8,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 9,
-                    "from": "G",
-                    "to": "H"
+                    "from": "6",
+                    "to": "7"
                 }
             ],
             "total_cost": 44,
@@ -409,48 +409,48 @@
             "mst_edges": [
                 {
                     "weight": 4,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 8,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 7,
-                    "from": "C",
-                    "to": "D"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 9,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 10,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 2,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 1,
-                    "from": "G",
-                    "to": "H"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 7,
-                    "from": "H",
-                    "to": "I"
+                    "from": "7",
+                    "to": "8"
                 },
                 {
                     "weight": 6,
-                    "from": "I",
-                    "to": "J"
+                    "from": "8",
+                    "to": "9"
                 }
             ],
             "total_cost": 54,
@@ -465,48 +465,48 @@
             "mst_edges": [
                 {
                     "weight": 1,
-                    "from": "G",
-                    "to": "H"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 2,
-                    "from": "F",
-                    "to": "G"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 4,
-                    "from": "A",
-                    "to": "B"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 6,
-                    "from": "I",
-                    "to": "J"
+                    "from": "8",
+                    "to": "9"
                 },
                 {
                     "weight": 7,
-                    "from": "C",
-                    "to": "D"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 7,
-                    "from": "H",
-                    "to": "I"
+                    "from": "7",
+                    "to": "8"
                 },
                 {
                     "weight": 8,
-                    "from": "A",
-                    "to": "C"
+                    "from": "0",
+                    "to": "2"
                 },
                 {
                     "weight": 9,
-                    "from": "D",
-                    "to": "E"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 10,
-                    "from": "E",
-                    "to": "F"
+                    "from": "4",
+                    "to": "5"
                 }
             ],
             "total_cost": 54,
@@ -520,98 +520,98 @@
             "mst_edges": [
                 {
                     "weight": 5,
-                    "from": "V1",
-                    "to": "V2"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 8,
-                    "from": "V2",
-                    "to": "V3"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 10,
-                    "from": "V3",
-                    "to": "V4"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 12,
-                    "from": "V4",
-                    "to": "V5"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 7,
-                    "from": "V5",
-                    "to": "V6"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 3,
-                    "from": "V6",
-                    "to": "V7"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 2,
-                    "from": "V7",
-                    "to": "V8"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 4,
-                    "from": "V8",
-                    "to": "V9"
+                    "from": "7",
+                    "to": "8"
                 },
                 {
                     "weight": 11,
-                    "from": "V9",
-                    "to": "V10"
+                    "from": "8",
+                    "to": "9"
                 },
                 {
                     "weight": 6,
-                    "from": "V10",
-                    "to": "V11"
+                    "from": "9",
+                    "to": "10"
                 },
                 {
                     "weight": 13,
-                    "from": "V11",
-                    "to": "V12"
+                    "from": "10",
+                    "to": "11"
                 },
                 {
                     "weight": 9,
-                    "from": "V12",
-                    "to": "V13"
+                    "from": "11",
+                    "to": "12"
                 },
                 {
                     "weight": 15,
-                    "from": "V13",
-                    "to": "V14"
+                    "from": "12",
+                    "to": "13"
                 },
                 {
                     "weight": 14,
-                    "from": "V14",
-                    "to": "V15"
+                    "from": "13",
+                    "to": "14"
                 },
                 {
                     "weight": 8,
-                    "from": "V15",
-                    "to": "V16"
+                    "from": "14",
+                    "to": "15"
                 },
                 {
                     "weight": 5,
-                    "from": "V16",
-                    "to": "V17"
+                    "from": "15",
+                    "to": "16"
                 },
                 {
                     "weight": 9,
-                    "from": "V17",
-                    "to": "V18"
+                    "from": "16",
+                    "to": "17"
                 },
                 {
                     "weight": 7,
-                    "from": "V18",
-                    "to": "V19"
+                    "from": "17",
+                    "to": "18"
                 },
                 {
                     "weight": 10,
-                    "from": "V19",
-                    "to": "V20"
+                    "from": "18",
+                    "to": "19"
                 }
             ],
             "total_cost": 158,
@@ -626,98 +626,98 @@
             "mst_edges": [
                 {
                     "weight": 2,
-                    "from": "V7",
-                    "to": "V8"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 3,
-                    "from": "V6",
-                    "to": "V7"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 4,
-                    "from": "V8",
-                    "to": "V9"
+                    "from": "7",
+                    "to": "8"
                 },
                 {
                     "weight": 5,
-                    "from": "V1",
-                    "to": "V2"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 5,
-                    "from": "V16",
-                    "to": "V17"
+                    "from": "15",
+                    "to": "16"
                 },
                 {
                     "weight": 6,
-                    "from": "V10",
-                    "to": "V11"
+                    "from": "9",
+                    "to": "10"
                 },
                 {
                     "weight": 7,
-                    "from": "V5",
-                    "to": "V6"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 7,
-                    "from": "V18",
-                    "to": "V19"
+                    "from": "17",
+                    "to": "18"
                 },
                 {
                     "weight": 8,
-                    "from": "V2",
-                    "to": "V3"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 8,
-                    "from": "V15",
-                    "to": "V16"
+                    "from": "14",
+                    "to": "15"
                 },
                 {
                     "weight": 9,
-                    "from": "V12",
-                    "to": "V13"
+                    "from": "11",
+                    "to": "12"
                 },
                 {
                     "weight": 9,
-                    "from": "V17",
-                    "to": "V18"
+                    "from": "16",
+                    "to": "17"
                 },
                 {
                     "weight": 10,
-                    "from": "V3",
-                    "to": "V4"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 10,
-                    "from": "V19",
-                    "to": "V20"
+                    "from": "18",
+                    "to": "19"
                 },
                 {
                     "weight": 11,
-                    "from": "V9",
-                    "to": "V10"
+                    "from": "8",
+                    "to": "9"
                 },
                 {
                     "weight": 12,
-                    "from": "V4",
-                    "to": "V5"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 13,
-                    "from": "V11",
-                    "to": "V12"
+                    "from": "10",
+                    "to": "11"
                 },
                 {
                     "weight": 14,
-                    "from": "V14",
-                    "to": "V15"
+                    "from": "13",
+                    "to": "14"
                 },
                 {
                     "weight": 15,
-                    "from": "V13",
-                    "to": "V14"
+                    "from": "12",
+                    "to": "13"
                 }
             ],
             "total_cost": 158,
@@ -731,148 +731,148 @@
             "mst_edges": [
                 {
                     "weight": 10,
-                    "from": "V1",
-                    "to": "V2"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 9,
-                    "from": "V2",
-                    "to": "V3"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 8,
-                    "from": "V3",
-                    "to": "V4"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 7,
-                    "from": "V4",
-                    "to": "V5"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 6,
-                    "from": "V5",
-                    "to": "V6"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 5,
-                    "from": "V6",
-                    "to": "V7"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 4,
-                    "from": "V7",
-                    "to": "V8"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 3,
-                    "from": "V8",
-                    "to": "V9"
+                    "from": "7",
+                    "to": "8"
                 },
                 {
                     "weight": 2,
-                    "from": "V9",
-                    "to": "V10"
+                    "from": "8",
+                    "to": "9"
                 },
                 {
                     "weight": 1,
-                    "from": "V10",
-                    "to": "V11"
+                    "from": "9",
+                    "to": "10"
                 },
                 {
                     "weight": 11,
-                    "from": "V11",
-                    "to": "V12"
+                    "from": "10",
+                    "to": "11"
                 },
                 {
                     "weight": 12,
-                    "from": "V12",
-                    "to": "V13"
+                    "from": "11",
+                    "to": "12"
                 },
                 {
                     "weight": 13,
-                    "from": "V13",
-                    "to": "V14"
+                    "from": "12",
+                    "to": "13"
                 },
                 {
                     "weight": 14,
-                    "from": "V14",
-                    "to": "V15"
+                    "from": "13",
+                    "to": "14"
                 },
                 {
                     "weight": 15,
-                    "from": "V15",
-                    "to": "V16"
+                    "from": "14",
+                    "to": "15"
                 },
                 {
                     "weight": 16,
-                    "from": "V16",
-                    "to": "V17"
+                    "from": "15",
+                    "to": "16"
                 },
                 {
                     "weight": 17,
-                    "from": "V17",
-                    "to": "V18"
+                    "from": "16",
+                    "to": "17"
                 },
                 {
                     "weight": 18,
-                    "from": "V18",
-                    "to": "V19"
+                    "from": "17",
+                    "to": "18"
                 },
                 {
                     "weight": 19,
-                    "from": "V19",
-                    "to": "V20"
+                    "from": "18",
+                    "to": "19"
                 },
                 {
                     "weight": 20,
-                    "from": "V20",
-                    "to": "V21"
+                    "from": "19",
+                    "to": "20"
                 },
                 {
                     "weight": 9,
-                    "from": "V21",
-                    "to": "V22"
+                    "from": "20",
+                    "to": "21"
                 },
                 {
                     "weight": 10,
-                    "from": "V22",
-                    "to": "V23"
+                    "from": "21",
+                    "to": "22"
                 },
                 {
                     "weight": 11,
-                    "from": "V23",
-                    "to": "V24"
+                    "from": "22",
+                    "to": "23"
                 },
                 {
                     "weight": 12,
-                    "from": "V24",
-                    "to": "V25"
+                    "from": "23",
+                    "to": "24"
                 },
                 {
                     "weight": 13,
-                    "from": "V25",
-                    "to": "V26"
+                    "from": "24",
+                    "to": "25"
                 },
                 {
                     "weight": 14,
-                    "from": "V26",
-                    "to": "V27"
+                    "from": "25",
+                    "to": "26"
                 },
                 {
                     "weight": 15,
-                    "from": "V27",
-                    "to": "V28"
+                    "from": "26",
+                    "to": "27"
                 },
                 {
                     "weight": 16,
-                    "from": "V28",
-                    "to": "V29"
+                    "from": "27",
+                    "to": "28"
                 },
                 {
                     "weight": 17,
-                    "from": "V29",
-                    "to": "V30"
+                    "from": "28",
+                    "to": "29"
                 }
             ],
             "total_cost": 327,
@@ -887,148 +887,148 @@
             "mst_edges": [
                 {
                     "weight": 1,
-                    "from": "V10",
-                    "to": "V11"
+                    "from": "9",
+                    "to": "10"
                 },
                 {
                     "weight": 2,
-                    "from": "V9",
-                    "to": "V10"
+                    "from": "8",
+                    "to": "9"
                 },
                 {
                     "weight": 3,
-                    "from": "V8",
-                    "to": "V9"
+                    "from": "7",
+                    "to": "8"
                 },
                 {
                     "weight": 4,
-                    "from": "V7",
-                    "to": "V8"
+                    "from": "6",
+                    "to": "7"
                 },
                 {
                     "weight": 5,
-                    "from": "V6",
-                    "to": "V7"
+                    "from": "5",
+                    "to": "6"
                 },
                 {
                     "weight": 6,
-                    "from": "V5",
-                    "to": "V6"
+                    "from": "4",
+                    "to": "5"
                 },
                 {
                     "weight": 7,
-                    "from": "V4",
-                    "to": "V5"
+                    "from": "3",
+                    "to": "4"
                 },
                 {
                     "weight": 8,
-                    "from": "V3",
-                    "to": "V4"
+                    "from": "2",
+                    "to": "3"
                 },
                 {
                     "weight": 9,
-                    "from": "V2",
-                    "to": "V3"
+                    "from": "1",
+                    "to": "2"
                 },
                 {
                     "weight": 9,
-                    "from": "V21",
-                    "to": "V22"
+                    "from": "20",
+                    "to": "21"
                 },
                 {
                     "weight": 10,
-                    "from": "V1",
-                    "to": "V2"
+                    "from": "0",
+                    "to": "1"
                 },
                 {
                     "weight": 10,
-                    "from": "V22",
-                    "to": "V23"
+                    "from": "21",
+                    "to": "22"
                 },
                 {
                     "weight": 11,
-                    "from": "V11",
-                    "to": "V12"
+                    "from": "10",
+                    "to": "11"
                 },
                 {
                     "weight": 11,
-                    "from": "V23",
-                    "to": "V24"
+                    "from": "22",
+                    "to": "23"
                 },
                 {
                     "weight": 12,
-                    "from": "V12",
-                    "to": "V13"
+                    "from": "11",
+                    "to": "12"
                 },
                 {
                     "weight": 12,
-                    "from": "V24",
-                    "to": "V25"
+                    "from": "23",
+                    "to": "24"
                 },
                 {
                     "weight": 13,
-                    "from": "V13",
-                    "to": "V14"
+                    "from": "12",
+                    "to": "13"
                 },
                 {
                     "weight": 13,
-                    "from": "V25",
-                    "to": "V26"
+                    "from": "24",
+                    "to": "25"
                 },
                 {
                     "weight": 14,
-                    "from": "V14",
-                    "to": "V15"
+                    "from": "13",
+                    "to": "14"
                 },
                 {
                     "weight": 14,
-                    "from": "V26",
-                    "to": "V27"
+                    "from": "25",
+                    "to": "26"
                 },
                 {
                     "weight": 15,
-                    "from": "V15",
-                    "to": "V16"
+                    "from": "14",
+                    "to": "15"
                 },
                 {
                     "weight": 15,
-                    "from": "V27",
-                    "to": "V28"
+                    "from": "26",
+                    "to": "27"
                 },
                 {
                     "weight": 16,
-                    "from": "V16",
-                    "to": "V17"
+                    "from": "15",
+                    "to": "16"
                 },
                 {
                     "weight": 16,
-                    "from": "V28",
-                    "to": "V29"
+                    "from": "27",
+                    "to": "28"
                 },
                 {
                     "weight": 17,
-                    "from": "V17",
-                    "to": "V18"
+                    "from": "16",
+                    "to": "17"
                 },
                 {
                     "weight": 17,
-                    "from": "V29",
-                    "to": "V30"
+                    "from": "28",
+                    "to": "29"
                 },
                 {
                     "weight": 18,
-                    "from": "V18",
-                    "to": "V19"
+                    "from": "17",
+                    "to": "18"
                 },
                 {
                     "weight": 19,
-                    "from": "V19",
-                    "to": "V20"
+                    "from": "18",
+                    "to": "19"
                 },
                 {
                     "weight": 20,
-                    "from": "V20",
-                    "to": "V21"
+                    "from": "19",
+                    "to": "20"
                 }
             ],
             "total_cost": 327,

@@ -3,6 +3,7 @@ import algorithms.EdgeWeightedGraph;
 import algorithms.PrimMST;
 import algorithms.KruskalMST;
 import metrics.Metrics;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import java.util.List;
 

@@ -11,23 +11,27 @@ public class Edge implements Comparable<Edge> {
         this.weight = weight;
     }
 
-    // Метод для получения одной из вершин ребра
+    public double weight() {
+        return weight;
+    }
+
     public int either() {
-        return v;  // Можно вернуть либо v, либо w, в зависимости от контекста
+        return v;
     }
 
     public int other(int vertex) {
         if (vertex == v) return w;
         else if (vertex == w) return v;
-        else throw new IllegalArgumentException("Inconsistent edge");
-    }
-
-    public double weight() {
-        return weight;
+        else throw new IllegalArgumentException("Invalid vertex");
     }
 
     @Override
-    public int compareTo(Edge other) {
-        return Double.compare(this.weight, other.weight);
+    public int compareTo(Edge that) {
+        return Double.compare(this.weight, that.weight);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%d-%d (%.2f)", v, w, weight);
     }
 }

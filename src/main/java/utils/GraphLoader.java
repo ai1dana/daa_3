@@ -20,7 +20,6 @@ public class GraphLoader {
             JSONObject root = new JSONObject(new JSONTokener(reader));
             JSONArray graphArray = root.getJSONArray("graphs");
 
-            // Перебираем каждый граф в JSON
             for (int i = 0; i < graphArray.length(); i++) {
                 JSONObject graphObj = graphArray.getJSONObject(i);
 

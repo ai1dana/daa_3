@@ -57,7 +57,6 @@ public class PerformanceCSVWriter {
                         primTime
                 ));
 
-                // ==== KRUSKAL ====
                 Metrics.startTimer();
                 long startKruskal = System.nanoTime();
                 KruskalMST kruskalMST = new KruskalMST(graph);
@@ -86,17 +85,16 @@ public class PerformanceCSVWriter {
                         kruskalTime
                 ));
 
-                System.out.printf("✅ Graph(%d): Prim = %.4f ms, Kruskal = %.4f ms%n", n, primTime, kruskalTime);
+                System.out.printf(" Graph(%d): Prim = %.4f ms, Kruskal = %.4f ms%n", n, primTime, kruskalTime);
             }
 
-            // === TOTAL SUMMARY ===
             writer.append("\n");
             writer.append(String.format("Prim Total,,,,,,,,%.4f\n", totalPrimTime));
             writer.append(String.format("Kruskal Total,,,,,,,,%.4f\n", totalKruskalTime));
             writer.append(String.format("Prim Total Ops,,,,,,,%d,\n", (int) totalPrimOps));
             writer.append(String.format("Kruskal Total Ops,,,,,,,%d,\n", (int) totalKruskalOps));
 
-            System.out.println("\n✅ Performance results written to: " + csvFile);
+            System.out.println("\n Performance results written to: " + csvFile);
             System.out.printf("Prim Total Time: %.3f ms, Total Ops: %.0f%n", totalPrimTime, totalPrimOps);
             System.out.printf("Kruskal Total Time: %.3f ms, Total Ops: %.0f%n", totalKruskalTime, totalKruskalOps);
 
@@ -105,7 +103,6 @@ public class PerformanceCSVWriter {
         }
     }
 
-    // 🔧 Генерация связного случайного графа
     private static EdgeWeightedGraph createRandomGraph(int n) {
         List<String> names = java.util.stream.IntStream.range(0, n)
                 .mapToObj(i -> "V" + i)
@@ -114,12 +111,10 @@ public class PerformanceCSVWriter {
         EdgeWeightedGraph graph = new EdgeWeightedGraph(n, names);
         Random random = new Random(42);
 
-        // базовая связность (цепочка)
         for (int i = 0; i < n - 1; i++) {
             graph.addEdge(new Edge(i, i + 1, random.nextInt(1, 50)));
         }
 
-        // дополнительные случайные рёбра
         int extraEdges = n * 2;
         for (int i = 0; i < extraEdges; i++) {
             int u = random.nextInt(n);
