@@ -1,0 +1,20 @@
+{
+    "graph2": {
+        "kruskalMSTCost": 6,
+        "executionTime": 0,
+        "primUnions": 3,
+        "primMSTCost": 6,
+        "kruskalComparisons": 5,
+        "primComparisons": 5,
+        "kruskalUnions": 3
+    },
+    "graph1": {
+        "kruskalMSTCost": 16,
+        "executionTime": 0,
+        "primUnions": 4,
+        "primMSTCost": 16,
+        "kruskalComparisons": 7,
+        "primComparisons": 7,
+        "kruskalUnions": 4
+    }
+}

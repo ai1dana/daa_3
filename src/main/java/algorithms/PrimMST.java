@@ -1,9 +1,11 @@
 package algorithms;
 
+import metrics.Metrics;
 import java.util.*;
 
-import metrics.Metrics;
-
+/**
+ * Реализация алгоритма Прима (MST) с поддержкой метрик
+ */
 public class PrimMST {
 
     private static final double FLOATING_POINT_EPSILON = 1.0E-12;
@@ -11,14 +13,17 @@ public class PrimMST {
     private double[] distTo;
     private boolean[] marked;
     private PriorityQueue<Edge> pq;
+    private double totalWeight;
 
     public PrimMST(EdgeWeightedGraph G) {
-        edgeTo = new Edge[G.V()];
-        distTo = new double[G.V()];
-        marked = new boolean[G.V()];
+        int V = G.V();
+        edgeTo = new Edge[V];
+        distTo = new double[V];
+        marked = new boolean[V];
         pq = new PriorityQueue<>(Comparator.comparingDouble(Edge::weight));
+        totalWeight = 0.0;
 
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < V; v++) {
             distTo[v] = Double.POSITIVE_INFINITY;
         }
 
@@ -27,10 +32,17 @@ public class PrimMST {
         visit(G, 0);
 
         while (!pq.isEmpty()) {
-            Edge edge = pq.poll();
             Metrics.incrementComparisons();
-            int v = edge.from();
-            visit(G, v);
+            Edge edge = pq.poll();
+            int v = edge.either();
+            int w = edge.other(v);
+
+            if (marked[v] && marked[w]) continue;
+
+            if (!marked[v]) visit(G, v);
+            if (!marked[w]) visit(G, w);
+
+            totalWeight += edge.weight();
         }
 
         Metrics.stopTimer();
@@ -38,21 +50,15 @@ public class PrimMST {
 
     private void visit(EdgeWeightedGraph G, int v) {
         marked[v] = true;
-
         for (Edge e : G.adj(v)) {
             int w = e.other(v);
-            if (marked[w]) continue;
-
             Metrics.incrementComparisons();
+
+            if (marked[w]) continue;
 
             if (e.weight() < distTo[w]) {
                 distTo[w] = e.weight();
                 edgeTo[w] = e;
-
-                if (pq.contains(e)) {
-                    pq.remove(e);
-                    Metrics.incrementDeletes();
-                }
                 pq.add(e);
                 Metrics.incrementInserts();
             }
@@ -60,21 +66,15 @@ public class PrimMST {
     }
 
     public Iterable<Edge> edges() {
-        Queue<Edge> mst = new LinkedList<>();
-        for (int v = 0; v < edgeTo.length; v++) {
-            if (edgeTo[v] != null) {
-                mst.add(edgeTo[v]);
-            }
+        List<Edge> mst = new ArrayList<>();
+        for (Edge e : edgeTo) {
+            if (e != null) mst.add(e);
         }
         return mst;
     }
 
     public double weight() {
-        double weight = 0.0;
-        for (Edge e : edges()) {
-            weight += e.weight();
-        }
-        return weight;
+        return totalWeight;
     }
 
     private boolean check(EdgeWeightedGraph G) {

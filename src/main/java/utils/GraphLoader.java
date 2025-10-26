@@ -12,7 +12,7 @@ import java.util.List;
 
 public class GraphLoader {
 
-    public static EdgeWeightedGraph loadGraphFromJson(String filename) throws IOException {
+    public static List<EdgeWeightedGraph> loadGraphFromJson(String filename) throws IOException {
         FileReader reader = new FileReader(filename);
         StringBuilder jsonBuilder = new StringBuilder();
         int c;
@@ -21,24 +21,41 @@ public class GraphLoader {
         }
 
         JSONObject json = new JSONObject(jsonBuilder.toString());
-        JSONArray edgesArray = json.getJSONArray("edges");
-        List<Edge> edges = new ArrayList<>();
 
-        for (int i = 0; i < edgesArray.length(); i++) {
-            JSONObject edgeObj = edgesArray.getJSONObject(i);
-            int v = edgeObj.getInt("from");
-            int w = edgeObj.getInt("to");
-            double weight = edgeObj.getDouble("weight");
-            edges.add(new Edge(v, w, weight));
+        JSONArray graphsArray = json.getJSONArray("graphs");
+        List<EdgeWeightedGraph> graphs = new ArrayList<>();
+
+        for (int i = 0; i < graphsArray.length(); i++) {
+            JSONObject graphObj = graphsArray.getJSONObject(i);
+
+            JSONArray nodesArray = graphObj.getJSONArray("nodes");
+            List<String> nodes = new ArrayList<>();
+            for (int j = 0; j < nodesArray.length(); j++) {
+                nodes.add(nodesArray.getString(j));
+            }
+
+            JSONArray edgesArray = graphObj.getJSONArray("edges");
+            List<Edge> edges = new ArrayList<>();
+            for (int j = 0; j < edgesArray.length(); j++) {
+                JSONObject edgeObj = edgesArray.getJSONObject(j);
+                String from = edgeObj.getString("from");
+                String to = edgeObj.getString("to");
+                double weight = edgeObj.getDouble("weight");
+
+                int fromIndex = nodes.indexOf(from);
+                int toIndex = nodes.indexOf(to);
+
+                edges.add(new Edge(fromIndex, toIndex, weight));
+            }
+
+            EdgeWeightedGraph graph = new EdgeWeightedGraph(nodes.size());
+            for (Edge edge : edges) {
+                graph.addEdge(edge);
+            }
+
+            graphs.add(graph);
         }
 
-        int vertices = json.getInt("vertices");
-        EdgeWeightedGraph graph = new EdgeWeightedGraph(vertices);
-        for (Edge e : edges) {
-            graph.addEdge(e);
-        }
-
-        return graph;
+        return graphs;
     }
 }
-

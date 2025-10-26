@@ -1,6 +1,6 @@
 package algorithms;
 
-public class Edge {
+public class Edge implements Comparable<Edge> {
     private final int v;
     private final int w;
     private final double weight;
@@ -11,8 +11,9 @@ public class Edge {
         this.weight = weight;
     }
 
+    // Метод для получения одной из вершин ребра
     public int either() {
-        return v;
+        return v;  // Можно вернуть либо v, либо w, в зависимости от контекста
     }
 
     public int other(int vertex) {
@@ -25,7 +26,8 @@ public class Edge {
         return weight;
     }
 
-    public int from() {
-        return v;
+    @Override
+    public int compareTo(Edge other) {
+        return Double.compare(this.weight, other.weight);
     }
 }
